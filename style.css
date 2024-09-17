@@ -1,0 +1,83 @@
+@import url("https://fonts.cdnfonts.com/css/games");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Games", sans-serif;
+}
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #dee2e6;
+  /* background: rgb(171, 28, 65);
+  background: linear-gradient(
+    106deg,
+    rgba(171, 28, 65, 1) 29%,
+    rgba(190, 217, 47, 1) 100%
+  ); */
+  background-color: #9775fa;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+nav h1 {
+  font-size: 40px;
+}
+.start {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.main {
+  width: 100%;
+  /* height: 500px; */
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.player {
+  width: 50%;
+  height: 450px;
+  justify-content: flex-start;
+  position: relative;
+  flex-direction: column;
+}
+.player::before {
+  content: "";
+  background-color: #040406;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  right: 8px;
+}
+.computer {
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#computerchoose {
+  transform: rotateY(180deg);
+}
+/* footer */
+.button-container {
+  background-color: #7950f2;
+  padding: 7px;
+  border-radius: 5px;
+  gap: 10px;
+}
+button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #5f3dc4;
+}
